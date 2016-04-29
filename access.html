@@ -18,9 +18,84 @@
 <script>
 mapboxgl.accessToken = 'pk.eyJ1Ijoib25hIiwiYSI6IlVYbkdyclkifQ.0Bz-QOOXZZK01dq4MuMImQ';
 
-var csv = Papa.parse("act_2012_2015_TFC_counts.csv", {
+var csv = Papa.parse("/act_2012_2015_TFC_counts.csv", {
+  download: true,
   complete: function(results) {
     console.log("Finshed:", results.data);
+    if (results.data.length > 1) {
+        console.log(results.data[0]);
+        // skip first row which is the headers of the CSV, hence starting with i=1
+        var i = 1, features = {}, features_list = [];
+        for (; i < results.data.length; i++) {
+            console.log(results.data[i]);
+            var row = results.data[i];
+
+            // skip empty rows
+            if (row === undefined || row.length < 8) {
+                continue;
+            }
+
+            var site = row[0]
+                , site_lat = row[1]
+                , site_long = row[2]
+                , district = row[3]
+                , district_lat = row[4]
+                , district_long = row[5]
+                , year = row[6]
+                , count = parseFloat(row[7]);
+            console.log(results.data[i]);
+            if (features[site] === undefined) {
+                features[site] = {}
+            }
+            if (features[site][district] === undefined) {
+                features[site][district] = {
+                    "type": "Feature",
+                    "properties": {
+                        "origin_district": district,
+                        "count": count,
+                        "data": {
+                            site: {
+                                year: count
+                            }
+                        }
+                    },
+                    "geometry": {
+                        "type": "LineString",
+                        "coordinates": [
+                            [site_long, site_lat],
+                            [district_long,	district_lat]
+                        ]
+                    }
+                };
+            } else {
+                features[site][district]["properties"]["count"] += count;
+                if (features[site][district]["properties"]["data"][site] == undefined) {
+                    features[site][district]["properties"]["data"][site] = {year: count};
+                } else {
+                    features[site][district]["properties"]["data"][site][year] = count;
+                }
+            }
+        }
+
+        console.log(features);
+
+        // create features list
+        for(var j in features) {
+            if (features.hasOwnProperty(j)) {
+                for(var k in features[j]) {
+                    if (features[j].hasOwnProperty(k)) {
+                        features_list.push(features[j][k])
+                    }
+                }
+            }
+        }
+
+        console.log(features_list);
+        var dataGeoJSON = {
+            "type": "FeatureCollection",
+            "features":  features_list
+        };
+    }
   }
 });
 
