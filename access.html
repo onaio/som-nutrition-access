@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.17.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.17.0/mapbox-gl.css' rel='stylesheet' />
+    <script src="js/papaparse.min.js"></script>
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
+</head>
+<body>
+
+<div id='map'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1Ijoib25hIiwiYSI6IlVYbkdyclkifQ.0Bz-QOOXZZK01dq4MuMImQ';
+
+var csv = Papa.parse("act_2012_2015_TFC_counts.csv", {
+  complete: function(results) {
+    console.log("Finshed:", results.data);
+  }
+});
+
+
+var forlanini = {
+    "type": "FeatureCollection",
+    "features": [{
+        "type": "Feature",
+        "properties": {
+            "origin_district": "Karaan",
+
+            "count": 2092
+        },
+        "geometry": {
+            "type": "LineString",
+            "coordinates": [
+            [45.360275, 2.046441667],
+            [45.39,	2.065160176]
+          ]
+        }
+    },{
+      "type": "Feature",
+      "properties": {
+          "origin_district": "Shabelle Dhexe",
+          "count": 169
+      },
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [
+          [45.360275, 2.046441667],
+          [46.10327,	2.96066]
+        ]
+      }
+    },{
+      "type": "Feature",
+          "properties": {
+              "origin_district": "Abdiasis",
+              "count": 803
+          },
+          "geometry": {
+              "type": "LineString",
+              "coordinates": [
+              [45.360275, 2.046441667],
+              [45.36,	2.040449815]
+            ]
+        }
+    }
+  ]
+  };
+
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/light-v8',
+    center: [45.360275, 2.046441667],
+    zoom: 15
+});
+
+map.on('load', function () {
+        map.addSource("forlanini_hc", {
+            "type": "geojson",
+            "data": forlanini
+        });
+
+    map.addLayer({
+        "id": "forlanini_hc",
+        "type": "line",
+        "source": "forlanini_hc",
+        "layout": {
+            "line-join": "round",
+            "line-cap": "round"
+        },
+        "paint": {
+            "line-color": "#FF4136",
+            "line-width": 3
+        }
+    });
+});
+</script>
+
+
+
+</body>
+</html>
