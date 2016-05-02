@@ -6,7 +6,7 @@
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.17.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.17.0/mapbox-gl.css' rel='stylesheet' />
-    
+
     <script src="js/papaparse.min.js"></script>
     <style>
         body { margin:0; padding:0; }
@@ -39,7 +39,7 @@
 <div id='map'></div>
 
 <div class='filter-ctrl'>
-    <input id='filter-input' type='text' name='filter' placeholder='Filter by name' />
+    <input id='filter-input' type='text' name='filter' placeholder='Filter by site' />
 </div>
 
 <script>
@@ -116,13 +116,13 @@ var sites_json = {
 var csv = Papa.parse("/act_2012_2015_TFC_counts.csv", {
   download: true,
   complete: function(results) {
-    console.log("Finshed:", results.data);
+    //console.log("Finshed:", results.data);
     if (results.data.length > 1) {
-        console.log(results.data[0]);
+
         // skip first row which is the headers of the CSV, hence starting with i=1
         var i = 1, features = {}, features_list = [];
         for (; i < results.data.length; i++) {
-            console.log(results.data[i]);
+            //console.log(results.data[i]);
             var row = results.data[i];
 
             // skip empty rows
@@ -138,7 +138,7 @@ var csv = Papa.parse("/act_2012_2015_TFC_counts.csv", {
                 , district_lat = parseFloat(row[5])
                 , year = row[6]
                 , count = parseFloat(row[7]);
-            console.log(results.data[i]);
+            //console.log(results.data[i]);
             if (features[site] === undefined) {
                 features[site] = {}
             }
@@ -146,7 +146,8 @@ var csv = Papa.parse("/act_2012_2015_TFC_counts.csv", {
                 features[site][district] = {
                     "type": "Feature",
                     "properties": {
-                        "origin_district": district,
+                        "origin_district": district.toLowerCase(),
+                        "site": site.toLowerCase(),
                         "count": count,
                         "data": {
                             site: {
@@ -170,11 +171,11 @@ var csv = Papa.parse("/act_2012_2015_TFC_counts.csv", {
                 } else {
                     features[site][district]["properties"]["data"][site][year] = count;
                 }
-              
+
             }
         }
 
-        console.log(features);
+        //console.log(features);
 
         // create features list
         for(var j in features) {
@@ -189,13 +190,17 @@ var csv = Papa.parse("/act_2012_2015_TFC_counts.csv", {
           //}
         }
 
-       
-        console.log(features_list);
+
+        //console.log(features_list);
 
         var dataGeoJSON = {
             "type": "FeatureCollection",
             "features":  features_list
         };
+
+
+        var layerIDs = []; // Will contain a list used to filter against.
+        var filterInput = document.getElementById('filter-input');
         var map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/mapbox/light-v8',
@@ -203,36 +208,40 @@ var csv = Papa.parse("/act_2012_2015_TFC_counts.csv", {
             zoom: 14
         });
         map.addControl(new mapboxgl.Navigation());
-
-
-
-
-
-
         map.on('load', function () {
-            map.addSource("forlanini_hc", {
+            map.addSource("nutrition_sites", {
                 "type": "geojson",
                 "data": dataGeoJSON
             });
+
+        dataGeoJSON.features.forEach(function(feature) {
+          var district = feature.properties['origin_district'].toLowerCase();
+          var site = feature.properties['site'].toLowerCase();
+          var line_width = Math.log(feature.properties['count'])/3;
+          var layerID = 'line-' + site;
+         
+          // Add a layer for this symbol type if it hasn't been added already.
+          if (!map.getLayer(layerID)) {
             map.addLayer({
-                "id": "forlanini_hc",
+                "id": layerID,
                 "type": "line",
-                "source": "forlanini_hc",
+                "source": "nutrition_sites",
                 "layout": {
                     "line-join": "round",
                     "line-cap": "round"
                 },
                 "paint": {
-                    //"line-color": "#FF4136",
-                    "line-color": "#b3b3b3",
-                    "line-width": 1
-                }
+                    "line-color": "#FF4136",
+                    //"line-color": "#b3b3b3",
+                    "line-width": line_width
+                },
+                "filter": ["==", "site", site]
             });
+            layerIDs.push(layerID);
+        }
+    });
 
-        });
-
-              map.on('load', function () {
-            map.addSource("sites", {
+     map.addSource("sites", {
                 "type": "geojson",
                 "data": sites_json
             });
@@ -243,17 +252,29 @@ var csv = Papa.parse("/act_2012_2015_TFC_counts.csv", {
         "source": "sites",
         "layout": {
             "icon-image": "hospital-15",
-            "text-field": "{title}",
+            "text-field": "{site}",
             "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
             "text-offset": [0, 0.6],
             "text-anchor": "top"
         }
     });
-      });
 
-    }
-  }
-});
+    filterInput.addEventListener('keyup', function(e) {
+        // If the input value matches a layerID set
+        // it's visibility to 'visible' or else hide it.
+        var value = e.target.value.trim().toLowerCase();
+        layerIDs.forEach(function(layerID) {
+            map.setLayoutProperty(layerID, 'visibility',
+                layerID.indexOf(value) > -1 ? 'visible' : 'none');
+        });
+    });
+
+  });
+
+
+
+}}});
+
 
 
 </script>

@@ -1,0 +1,65 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 45.360275,2.046441667 ]
+    },
+    "properties": {
+    "site":"Forlanini"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 45.31552108,2.03289008 ]
+    },
+    "properties": {
+    "site":"Hodan"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 45.2677939,2.059891418 ]
+    },
+    "properties": {
+    "site":"Kahda"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 45.49184,3.38148 ]
+    },
+    "properties": {
+    "site":"Lafoole"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 45.324,2.0310756 ]
+    },
+    "properties": {
+    "site":"Waberi"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 45.332,2.052 ]
+    },
+    "properties": {
+    "site":"Wardhigley"
+    }
+  }
+]
+}
