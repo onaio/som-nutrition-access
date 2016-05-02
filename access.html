@@ -68,12 +68,14 @@ var csv = Papa.parse("/act_2012_2015_TFC_counts.csv", {
                     }
                 };
             } else {
+
                 features[site][district]["properties"]["count"] += count;
                 if (features[site][district]["properties"]["data"][site] == undefined) {
                     features[site][district]["properties"]["data"][site] = {year: count};
                 } else {
                     features[site][district]["properties"]["data"][site][year] = count;
                 }
+              
             }
         }
 
@@ -81,6 +83,7 @@ var csv = Papa.parse("/act_2012_2015_TFC_counts.csv", {
 
         // create features list
         for(var j in features) {
+           if (j === "Hodan") {
             if (features.hasOwnProperty(j)) {
                 for(var k in features[j]) {
                     if (features[j].hasOwnProperty(k)) {
@@ -88,6 +91,7 @@ var csv = Papa.parse("/act_2012_2015_TFC_counts.csv", {
                     }
                 }
             }
+          }
         }
 
         console.log(features_list);
@@ -97,10 +101,11 @@ var csv = Papa.parse("/act_2012_2015_TFC_counts.csv", {
         };
         var map = new mapboxgl.Map({
             container: 'map',
-            style: 'mapbox://styles/mapbox/light-v8',
+            style: 'mapbox://styles/mapbox/dark-v8',
             center: [45.360275, 2.046441667],
-            zoom: 15
+            zoom: 14
         });
+        map.addControl(new mapboxgl.Navigation());
         map.on('load', function () {
             map.addSource("forlanini_hc", {
                 "type": "geojson",
@@ -116,7 +121,8 @@ var csv = Papa.parse("/act_2012_2015_TFC_counts.csv", {
                 },
                 "paint": {
                     "line-color": "#FF4136",
-                    "line-width": 3
+                   // "line-color": "#b3b3b3",
+                    "line-width": 2
                 }
             });
 
