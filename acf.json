@@ -1,0 +1,2337 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Karaan",
+                "count": 2092,
+                "data": {
+                    "site": {
+                        "year": 389
+                    },
+                    "Forlanini": {
+                        "2014": 10,
+                        "2015": 845,
+                        "year": 848
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.360275,
+                        2.046441667
+                    ],
+                    [
+                        45.39,
+                        2.065160176
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Forlanini",
+                "count": 194,
+                "data": {
+                    "site": {
+                        "year": 194
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.360275,
+                        2.046441667
+                    ],
+                    [
+                        45.360275,
+                        2.046441667
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Shabelle Dhexe",
+                "count": 169,
+                "data": {
+                    "site": {
+                        "year": 94
+                    },
+                    "Forlanini": {
+                        "2015": 52,
+                        "year": 23
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.360275,
+                        2.046441667
+                    ],
+                    [
+                        46.10327,
+                        2.96066
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Shabelle Hoose",
+                "count": 40,
+                "data": {
+                    "site": {
+                        "year": 20
+                    },
+                    "Forlanini": {
+                        "2015": 14,
+                        "year": 6
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.360275,
+                        2.046441667
+                    ],
+                    [
+                        44.34197,
+                        1.79194
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Abdiasis",
+                "count": 803,
+                "data": {
+                    "site": {
+                        "year": 803
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.360275,
+                        2.046441667
+                    ],
+                    [
+                        45.36,
+                        2.040449815
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Bay",
+                "count": 6,
+                "data": {
+                    "site": {
+                        "year": 3
+                    },
+                    "Forlanini": {
+                        "year": 3
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.360275,
+                        2.046441667
+                    ],
+                    [
+                        43.56644,
+                        2.65301
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Baardheere",
+                "count": 7,
+                "data": {
+                    "site": {
+                        "year": 7
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.360275,
+                        2.046441667
+                    ],
+                    [
+                        42.288,
+                        2.339
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Madino",
+                "count": 18,
+                "data": {
+                    "site": {
+                        "year": 12
+                    },
+                    "Forlanini": {
+                        "2015": 4,
+                        "year": 2
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.360275,
+                        2.046441667
+                    ],
+                    [
+                        42.60051,
+                        0.82171
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Yaaqshiid",
+                "count": 260,
+                "data": {
+                    "site": {
+                        "year": 123
+                    },
+                    "Forlanini": {
+                        "2015": 15,
+                        "year": 122
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.360275,
+                        2.046441667
+                    ],
+                    [
+                        45.35,
+                        2.06777077
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Cabdicasiis",
+                "count": 668,
+                "data": {
+                    "site": {
+                        "year": 72
+                    },
+                    "Forlanini": {
+                        "2015": 468,
+                        "year": 128
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.360275,
+                        2.046441667
+                    ],
+                    [
+                        45.36,
+                        2.040449815
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Galgaduud",
+                "count": 6,
+                "data": {
+                    "site": {
+                        "year": 2
+                    },
+                    "Forlanini": {
+                        "year": 4
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.360275,
+                        2.046441667
+                    ],
+                    [
+                        46.81808,
+                        5.03349
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Shibis",
+                "count": 136,
+                "data": {
+                    "site": {
+                        "year": 54
+                    },
+                    "Forlanini": {
+                        "2015": 7,
+                        "year": 75
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.360275,
+                        2.046441667
+                    ],
+                    [
+                        45.35,
+                        2.047637896
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Xamar JaabJab",
+                "count": 17,
+                "data": {
+                    "site": {
+                        "year": 5
+                    },
+                    "Forlanini": {
+                        "2015": 3,
+                        "year": 9
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.360275,
+                        2.046441667
+                    ],
+                    [
+                        45.33,
+                        2.027641272
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Wadajir",
+                "count": 1,
+                "data": {
+                    "site": {
+                        "year": 1
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.360275,
+                        2.046441667
+                    ],
+                    [
+                        45.28,
+                        2.054921387
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Hodan",
+                "count": 8,
+                "data": {
+                    "site": {
+                        "year": 4
+                    },
+                    "Forlanini": {
+                        "2015": 3,
+                        "year": 1
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.360275,
+                        2.046441667
+                    ],
+                    [
+                        45.3,
+                        2.043926495
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Shangani",
+                "count": 45,
+                "data": {
+                    "site": {
+                        "year": 13
+                    },
+                    "Forlanini": {
+                        "2015": 3,
+                        "year": 29
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.360275,
+                        2.046441667
+                    ],
+                    [
+                        45.35,
+                        2.03373112
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Hawl Wadaag",
+                "count": 7,
+                "data": {
+                    "site": {
+                        "year": 4
+                    },
+                    "Forlanini": {
+                        "2015": 2,
+                        "year": 1
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.360275,
+                        2.046441667
+                    ],
+                    [
+                        45.32,
+                        2.048030929
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Wardhiigleey",
+                "count": 5520,
+                "data": {
+                    "site": {
+                        "year": 17
+                    },
+                    "Forlanini": {
+                        "2014": 3591,
+                        "2015": 1,
+                        "year": 1911
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.360275,
+                        2.046441667
+                    ],
+                    [
+                        45.33,
+                        2.054921387
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Boondheere",
+                "count": 55,
+                "data": {
+                    "site": {
+                        "year": 22
+                    },
+                    "Forlanini": {
+                        "2015": 2,
+                        "year": 31
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.360275,
+                        2.046441667
+                    ],
+                    [
+                        45.34,
+                        2.045550458
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Jowhar",
+                "count": 1,
+                "data": {
+                    "site": {
+                        "year": 1
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.360275,
+                        2.046441667
+                    ],
+                    [
+                        45.5016,
+                        2.7774
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Hodan ",
+                "count": 1,
+                "data": {
+                    "site": {
+                        "year": 1
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.360275,
+                        2.046441667
+                    ],
+                    [
+                        45.3,
+                        2.043926495
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Xamar Weyne",
+                "count": 16,
+                "data": {
+                    "site": {
+                        "year": 8
+                    },
+                    "Forlanini": {
+                        "year": 8
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.360275,
+                        2.046441667
+                    ],
+                    [
+                        45.34,
+                        2.03373112
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Waaberi",
+                "count": 3,
+                "data": {
+                    "site": {
+                        "year": 1
+                    },
+                    "Forlanini": {
+                        "year": 2
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.360275,
+                        2.046441667
+                    ],
+                    [
+                        45.3217067,
+                        2.0310756
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Baidoa",
+                "count": 1,
+                "data": {
+                    "site": {
+                        "year": 1
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.360275,
+                        2.046441667
+                    ],
+                    [
+                        43.6519,
+                        3.1141
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Bakool",
+                "count": 1,
+                "data": {
+                    "site": {
+                        "year": 1
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.360275,
+                        2.046441667
+                    ],
+                    [
+                        43.95077,
+                        4.20523
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Hiraan",
+                "count": 1,
+                "data": {
+                    "site": {
+                        "year": 1
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.360275,
+                        2.046441667
+                    ],
+                    [
+                        45.2994,
+                        4.321
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Hodan",
+                "count": 4717,
+                "data": {
+                    "site": {
+                        "year": 863
+                    },
+                    "Hodan": {
+                        "2014": 37,
+                        "2015": 2501,
+                        "year": 1316
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.31552108,
+                        2.03289008
+                    ],
+                    [
+                        45.3,
+                        2.043926495
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Madino",
+                "count": 274,
+                "data": {
+                    "site": {
+                        "year": 191
+                    },
+                    "Hodan": {
+                        "2015": 7,
+                        "year": 76
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.31552108,
+                        2.03289008
+                    ],
+                    [
+                        42.60051,
+                        0.82171
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Daynile",
+                "count": 20,
+                "data": {
+                    "site": {
+                        "year": 4
+                    },
+                    "Hodan": {
+                        "2015": 14,
+                        "year": 2
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.31552108,
+                        2.03289008
+                    ],
+                    [
+                        45.28,
+                        2.073503076
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Waaberi",
+                "count": 354,
+                "data": {
+                    "site": {
+                        "year": 273
+                    },
+                    "Hodan": {
+                        "2015": 11,
+                        "year": 70
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.31552108,
+                        2.03289008
+                    ],
+                    [
+                        45.3217067,
+                        2.0310756
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Shabelle Dhexe",
+                "count": 53,
+                "data": {
+                    "site": {
+                        "year": 47
+                    },
+                    "Hodan": {
+                        "2015": 3,
+                        "year": 3
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.31552108,
+                        2.03289008
+                    ],
+                    [
+                        46.10327,
+                        2.96066
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Hawl Wadaag",
+                "count": 124,
+                "data": {
+                    "site": {
+                        "year": 63
+                    },
+                    "Hodan": {
+                        "2015": 6,
+                        "year": 55
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.31552108,
+                        2.03289008
+                    ],
+                    [
+                        45.32,
+                        2.048030929
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Shabelle Hoose",
+                "count": 240,
+                "data": {
+                    "site": {
+                        "year": 209
+                    },
+                    "Hodan": {
+                        "2015": 16,
+                        "year": 15
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.31552108,
+                        2.03289008
+                    ],
+                    [
+                        44.34197,
+                        1.79194
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Juba Hoose",
+                "count": 4,
+                "data": {
+                    "site": {
+                        "year": 3
+                    },
+                    "Hodan": {
+                        "year": 1
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.31552108,
+                        2.03289008
+                    ],
+                    [
+                        41.88302,
+                        -0.04197
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Kahda",
+                "count": 2,
+                "data": {
+                    "site": {
+                        "year": 2
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.31552108,
+                        2.03289008
+                    ],
+                    [
+                        45.2677939,
+                        2.059891418
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Dharkenley",
+                "count": 21,
+                "data": {
+                    "site": {
+                        "year": 5
+                    },
+                    "Hodan": {
+                        "2015": 7,
+                        "year": 9
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.31552108,
+                        2.03289008
+                    ],
+                    [
+                        45.25,
+                        2.009499426
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Afgooye",
+                "count": 6,
+                "data": {
+                    "site": {
+                        "year": 1
+                    },
+                    "Hodan": {
+                        "2015": 3,
+                        "year": 2
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.31552108,
+                        2.03289008
+                    ],
+                    [
+                        45.1167,
+                        2.1426
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Xamar JaabJab",
+                "count": 91,
+                "data": {
+                    "site": {
+                        "year": 75
+                    },
+                    "Hodan": {
+                        "2015": 4,
+                        "year": 12
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.31552108,
+                        2.03289008
+                    ],
+                    [
+                        45.33,
+                        2.027641272
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Yaaqshiid",
+                "count": 12,
+                "data": {
+                    "site": {
+                        "year": 10
+                    },
+                    "Hodan": {
+                        "2015": 1,
+                        "year": 1
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.31552108,
+                        2.03289008
+                    ],
+                    [
+                        45.35,
+                        2.06777077
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Bay",
+                "count": 57,
+                "data": {
+                    "site": {
+                        "year": 50
+                    },
+                    "Hodan": {
+                        "year": 7
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.31552108,
+                        2.03289008
+                    ],
+                    [
+                        43.56644,
+                        2.65301
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Wardhiigleey",
+                "count": 10666,
+                "data": {
+                    "site": {
+                        "year": 17
+                    },
+                    "Hodan": {
+                        "2014": 7055,
+                        "2015": 1,
+                        "year": 3593
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.31552108,
+                        2.03289008
+                    ],
+                    [
+                        45.33,
+                        2.054921387
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Wadajir",
+                "count": 308,
+                "data": {
+                    "site": {
+                        "year": 16
+                    },
+                    "Hodan": {
+                        "2015": 3,
+                        "year": 289
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.31552108,
+                        2.03289008
+                    ],
+                    [
+                        45.28,
+                        2.054921387
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Baardheere",
+                "count": 1,
+                "data": {
+                    "site": {
+                        "year": 1
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.31552108,
+                        2.03289008
+                    ],
+                    [
+                        42.288,
+                        2.339
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Hodan ",
+                "count": 43,
+                "data": {
+                    "site": {
+                        "year": 43
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.31552108,
+                        2.03289008
+                    ],
+                    [
+                        45.3,
+                        2.043926495
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Xamar Weyne",
+                "count": 19,
+                "data": {
+                    "site": {
+                        "year": 18
+                    },
+                    "hodan": {
+                        "year": 1
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.31552108,
+                        2.03289008
+                    ],
+                    [
+                        45.34,
+                        2.03373112
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Lower Juba",
+                "count": 3,
+                "data": {
+                    "site": {
+                        "year": 3
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.31552108,
+                        2.03289008
+                    ],
+                    [
+                        41.88302,
+                        -0.04197
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Baidoa",
+                "count": 9,
+                "data": {
+                    "site": {
+                        "year": 9
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.31552108,
+                        2.03289008
+                    ],
+                    [
+                        43.6519,
+                        3.1141
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Galgaduud",
+                "count": 1,
+                "data": {
+                    "site": {
+                        "year": 1
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.31552108,
+                        2.03289008
+                    ],
+                    [
+                        46.81808,
+                        5.03349
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Bur Hakaba",
+                "count": 1,
+                "data": {
+                    "site": {
+                        "year": 1
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.31552108,
+                        2.03289008
+                    ],
+                    [
+                        44.0794,
+                        2.7991
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Boondheere",
+                "count": 9,
+                "data": {
+                    "site": {
+                        "year": 9
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.31552108,
+                        2.03289008
+                    ],
+                    [
+                        45.34,
+                        2.045550458
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Bari",
+                "count": 1,
+                "data": {
+                    "site": {
+                        "year": 1
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.31552108,
+                        2.03289008
+                    ],
+                    [
+                        50.16365,
+                        10.30626
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Bakool",
+                "count": 4,
+                "data": {
+                    "site": {
+                        "year": 4
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.31552108,
+                        2.03289008
+                    ],
+                    [
+                        43.95077,
+                        4.20523
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Balcad",
+                "count": 3,
+                "data": {
+                    "site": {
+                        "year": 3
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.31552108,
+                        2.03289008
+                    ],
+                    [
+                        45.3863,
+                        2.3584
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Jowhar",
+                "count": 1,
+                "data": {
+                    "site": {
+                        "year": 1
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.31552108,
+                        2.03289008
+                    ],
+                    [
+                        45.5016,
+                        2.7774
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Hudur",
+                "count": 1,
+                "data": {
+                    "site": {
+                        "year": 1
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.31552108,
+                        2.03289008
+                    ],
+                    [
+                        43.8888,
+                        4.1228
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Gedo",
+                "count": 1,
+                "data": {
+                    "site": {
+                        "year": 1
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.31552108,
+                        2.03289008
+                    ],
+                    [
+                        41.97805,
+                        2.89647
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Shibis",
+                "count": 2,
+                "data": {
+                    "site": {
+                        "year": 1
+                    },
+                    "hodan": {
+                        "year": 1
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.31552108,
+                        2.03289008
+                    ],
+                    [
+                        45.35,
+                        2.047637896
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Shangani",
+                "count": 1,
+                "data": {
+                    "site": {
+                        "year": 1
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.31552108,
+                        2.03289008
+                    ],
+                    [
+                        45.35,
+                        2.03373112
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Karaan",
+                "count": 4,
+                "data": {
+                    "site": {
+                        "year": 1
+                    },
+                    "hodan": {
+                        "year": 3
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.31552108,
+                        2.03289008
+                    ],
+                    [
+                        45.39,
+                        2.065160176
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Hiraan",
+                "count": 5,
+                "data": {
+                    "site": {
+                        "year": 5
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.31552108,
+                        2.03289008
+                    ],
+                    [
+                        45.2994,
+                        4.321
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Kismayo",
+                "count": 1,
+                "data": {
+                    "site": {
+                        "year": 1
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.31552108,
+                        2.03289008
+                    ],
+                    [
+                        42.5461,
+                        0.356
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Kahda",
+                "count": 1245,
+                "data": {
+                    "site": {
+                        "year": 554
+                    },
+                    "Kahda": {
+                        "year": 691
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.2677939,
+                        2.059891418
+                    ],
+                    [
+                        45.2677939,
+                        2.059891418
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Dharkenley",
+                "count": 47,
+                "data": {
+                    "site": {
+                        "year": 46
+                    },
+                    "Kahda": {
+                        "year": 1
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.2677939,
+                        2.059891418
+                    ],
+                    [
+                        45.25,
+                        2.009499426
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Madino",
+                "count": 6,
+                "data": {
+                    "site": {
+                        "year": 5
+                    },
+                    "Kahda": {
+                        "year": 1
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.2677939,
+                        2.059891418
+                    ],
+                    [
+                        42.60051,
+                        0.82171
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Juba Hoose",
+                "count": 1,
+                "data": {
+                    "site": {
+                        "year": 1
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.2677939,
+                        2.059891418
+                    ],
+                    [
+                        41.88302,
+                        -0.04197
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Shabelle Hoose",
+                "count": 2,
+                "data": {
+                    "site": {
+                        "year": 2
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.2677939,
+                        2.059891418
+                    ],
+                    [
+                        44.34197,
+                        1.79194
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Wardhiigleey",
+                "count": 6487,
+                "data": {
+                    "site": {
+                        "year": 1906
+                    },
+                    "kahda": {
+                        "year": 4581
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.2677939,
+                        2.059891418
+                    ],
+                    [
+                        45.33,
+                        2.054921387
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Lafole",
+                "count": 2665,
+                "data": {
+                    "site": {
+                        "year": 110
+                    },
+                    "Lafoole": {
+                        "year": 2555
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.49184,
+                        3.38148
+                    ],
+                    [
+                        45.16352,
+                        2.09955
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Afgooye",
+                "count": 1,
+                "data": {
+                    "site": {
+                        "year": 1
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.49184,
+                        3.38148
+                    ],
+                    [
+                        45.1167,
+                        2.1426
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Xalane",
+                "count": 3,
+                "data": {
+                    "site": {
+                        "year": 3
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.49184,
+                        3.38148
+                    ],
+                    [
+                        46.79135,
+                        4.8297
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Wardhiigleey",
+                "count": 1186,
+                "data": {
+                    "site": {
+                        "year": 1186
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.49184,
+                        3.38148
+                    ],
+                    [
+                        45.33,
+                        2.054921387
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Waaberi",
+                "count": 976,
+                "data": {
+                    "site": {
+                        "year": 3
+                    },
+                    "Waberi": {
+                        "year": 973
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.324,
+                        2.0310756
+                    ],
+                    [
+                        45.3217067,
+                        2.0310756
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Xamar JaabJab",
+                "count": 22,
+                "data": {
+                    "site": {
+                        "year": 22
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.324,
+                        2.0310756
+                    ],
+                    [
+                        45.33,
+                        2.027641272
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Xamar Weyne",
+                "count": 5,
+                "data": {
+                    "site": {
+                        "year": 5
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.324,
+                        2.0310756
+                    ],
+                    [
+                        45.34,
+                        2.03373112
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Madino",
+                "count": 1,
+                "data": {
+                    "site": {
+                        "year": 1
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.324,
+                        2.0310756
+                    ],
+                    [
+                        42.60051,
+                        0.82171
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Baydhaba",
+                "count": 1,
+                "data": {
+                    "site": {
+                        "year": 1
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.324,
+                        2.0310756
+                    ],
+                    [
+                        43.6519,
+                        3.1141
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Shabelle Hoose",
+                "count": 1,
+                "data": {
+                    "site": {
+                        "year": 1
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.324,
+                        2.0310756
+                    ],
+                    [
+                        44.34197,
+                        1.79194
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Mudug",
+                "count": 1,
+                "data": {
+                    "site": {
+                        "year": 1
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.324,
+                        2.0310756
+                    ],
+                    [
+                        48.23885,
+                        6.30213
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Hawl Wadaag",
+                "count": 116,
+                "data": {
+                    "site": {
+                        "year": 116
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.332,
+                        2.052
+                    ],
+                    [
+                        45.32,
+                        2.048030929
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Wardhiigleey",
+                "count": 8414,
+                "data": {
+                    "site": {
+                        "year": 1
+                    },
+                    "Wardhigley": {
+                        "2014": 4636,
+                        "year": 3777
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.332,
+                        2.052
+                    ],
+                    [
+                        45.33,
+                        2.054921387
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Hodan",
+                "count": 19,
+                "data": {
+                    "site": {
+                        "year": 19
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.332,
+                        2.052
+                    ],
+                    [
+                        45.3,
+                        2.043926495
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Towfiiq",
+                "count": 4,
+                "data": {
+                    "site": {
+                        "year": 4
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.332,
+                        2.052
+                    ],
+                    [
+                        48.87528,
+                        6.61722
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Jowhar",
+                "count": 3,
+                "data": {
+                    "site": {
+                        "year": 3
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.332,
+                        2.052
+                    ],
+                    [
+                        45.5016,
+                        2.7774
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Karaan",
+                "count": 2,
+                "data": {
+                    "site": {
+                        "year": 2
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.332,
+                        2.052
+                    ],
+                    [
+                        45.39,
+                        2.065160176
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Shabelle Dhexe",
+                "count": 1,
+                "data": {
+                    "site": {
+                        "year": 1
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.332,
+                        2.052
+                    ],
+                    [
+                        46.10327,
+                        2.96066
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Boondheere",
+                "count": 1,
+                "data": {
+                    "site": {
+                        "year": 1
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.332,
+                        2.052
+                    ],
+                    [
+                        45.34,
+                        2.045550458
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "origin_district": "Tarbunka",
+                "count": 3,
+                "data": {
+                    "site": {
+                        "year": 3
+                    }
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        45.332,
+                        2.052
+                    ],
+                    [
+                        null,
+                        null
+                    ]
+                ]
+            }
+        }
+    ]
+}
