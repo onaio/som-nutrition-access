@@ -15,6 +15,21 @@
 </head>
 <body>
 <style>
+
+h2, h3 {
+    margin: 10px;
+    font-size: 1.2em;
+}
+.map-overlay {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    margin-right: 20px;
+    font-family: Arial, sans-serif;
+    overflow: auto;
+    border-radius: 3px;
+}
     .filter-ctrl {
         position: absolute;
         top: 10px;
@@ -37,6 +52,7 @@
     }
 </style>
 <div id='map'></div>
+<div class='map-overlay' id='features'><h2>Access to Nutrition Centres - Somalia</h2></div>
 
 <div class='filter-ctrl'>
     <input id='filter-input' type='text' name='filter' placeholder='Filter by site' />
@@ -112,6 +128,442 @@ var sites_json = {
 ]
 };
 
+var districts_json = {
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 45.36,2.040449815 ]
+    },
+    "properties": {
+    "district":"Abdiasis"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 45.1167,2.1426 ]
+    },
+    "properties": {
+    "district":"Afgooye"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 42.288,2.339 ]
+    },
+    "properties": {
+    "district":"Baardheere"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 43.6519,3.1141 ]
+    },
+    "properties": {
+    "district":"Baidoa"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 43.95077,4.20523 ]
+    },
+    "properties": {
+    "district":"Bakool"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 45.3863,2.3584 ]
+    },
+    "properties": {
+    "district":"Balcad"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 50.16365,10.30626 ]
+    },
+    "properties": {
+    "district":"Bari"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 43.56644,2.65301 ]
+    },
+    "properties": {
+    "district":"Bay"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 43.6519,3.1141 ]
+    },
+    "properties": {
+    "district":"Baydhaba"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 45.34,2.045550458 ]
+    },
+    "properties": {
+    "district":"Boondheere"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 44.0794,2.7991 ]
+    },
+    "properties": {
+    "district":"Bur Hakaba"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 45.36,2.040449815 ]
+    },
+    "properties": {
+    "district":"Cabdicasiis"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 45.28,2.073503076 ]
+    },
+    "properties": {
+    "district":"Daynile"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 45.25,2.009499426 ]
+    },
+    "properties": {
+    "district":"Dharkenley"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 45.360275,2.046441667 ]
+    },
+    "properties": {
+    "district":"Forlanini"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 46.81808,5.03349 ]
+    },
+    "properties": {
+    "district":"Galgaduud"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 41.97805,2.89647 ]
+    },
+    "properties": {
+    "district":"Gedo"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 45.32,2.048030929 ]
+    },
+    "properties": {
+    "district":"Hawl Wadaag"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 45.2994,4.321 ]
+    },
+    "properties": {
+    "district":"Hiraan"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 45.3,2.043926495 ]
+    },
+    "properties": {
+    "district":"Hodan"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 43.8888,4.1228 ]
+    },
+    "properties": {
+    "district":"Hudur"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 45.5016,2.7774 ]
+    },
+    "properties": {
+    "district":"Jowhar"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 41.88302,-0.04197 ]
+    },
+    "properties": {
+    "district":"Juba Hoose"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 45.2677939,2.059891418 ]
+    },
+    "properties": {
+    "district":"Kahda"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 45.39,2.065160176 ]
+    },
+    "properties": {
+    "district":"Karaan"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 42.5461,0.356 ]
+    },
+    "properties": {
+    "district":"Kismayo"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 45.16352,2.09955 ]
+    },
+    "properties": {
+    "district":"Lafole"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 41.88302,-0.04197 ]
+    },
+    "properties": {
+    "district":"Lower Juba"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 42.60051,0.82171 ]
+    },
+    "properties": {
+    "district":"Madino"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 48.23885,6.30213 ]
+    },
+    "properties": {
+    "district":"Mudug"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 46.10327,2.96066 ]
+    },
+    "properties": {
+    "district":"Shabelle Dhexe"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 45.35,2.03373112 ]
+    },
+    "properties": {
+    "district":"Shangani"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 45.35,2.047637896 ]
+    },
+    "properties": {
+    "district":"Shibis"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "district":"Tarbunka"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 48.87528,6.61722 ]
+    },
+    "properties": {
+    "district":"Towfiiq"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 45.3217067,2.0310756 ]
+    },
+    "properties": {
+    "district":"Waaberi"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 45.28,2.054921387 ]
+    },
+    "properties": {
+    "district":"Wadajir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 45.33,2.054921387 ]
+    },
+    "properties": {
+    "district":"Wardhiigleey"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 46.79135,4.8297 ]
+    },
+    "properties": {
+    "district":"Xalane"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 45.33,2.027641272 ]
+    },
+    "properties": {
+    "district":"Xamar JaabJab"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 45.34,2.03373112 ]
+    },
+    "properties": {
+    "district":"Xamar Weyne"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 45.35,2.06777077 ]
+    },
+    "properties": {
+    "district":"Yaaqshiid"
+    }
+  }
+]
+};
+
+
+
+function calc_width(num) {
+ if (num < 10) {return 0.5} else
+   if (num < 100) {return 1} else 
+    if (num < 500) {return 2} else
+      if (num < 1000) {return 1} else 
+        if (num < 5000) {return 10} else
+          if (num < 10000) {return 100}  
+}
 
 var csv = Papa.parse("/act_2012_2015_TFC_counts.csv", {
   download: true,
@@ -203,7 +655,7 @@ var csv = Papa.parse("/act_2012_2015_TFC_counts.csv", {
         var filterInput = document.getElementById('filter-input');
         var map = new mapboxgl.Map({
             container: 'map',
-            style: 'mapbox://styles/mapbox/light-v8',
+            style: 'mapbox://styles/ona/cing3mzzw01ckx9nouah4vlpl',
             center: [45.360275, 2.046441667],
             zoom: 14
         });
@@ -217,7 +669,8 @@ var csv = Papa.parse("/act_2012_2015_TFC_counts.csv", {
         dataGeoJSON.features.forEach(function(feature) {
           var district = feature.properties['origin_district'].toLowerCase();
           var site = feature.properties['site'].toLowerCase();
-          var line_width = Math.log(feature.properties['count'])/3;
+          var count = feature.properties['count'];
+   
           var layerID = 'line-' + site;
          
           // Add a layer for this symbol type if it hasn't been added already.
@@ -233,7 +686,7 @@ var csv = Papa.parse("/act_2012_2015_TFC_counts.csv", {
                 "paint": {
                     "line-color": "#FF4136",
                     //"line-color": "#b3b3b3",
-                    "line-width": line_width
+                    "line-width": 2
                 },
                 "filter": ["==", "site", site]
             });
@@ -253,11 +706,45 @@ var csv = Papa.parse("/act_2012_2015_TFC_counts.csv", {
         "layout": {
             "icon-image": "hospital-15",
             "text-field": "{site}",
+            "text-size": 14,
             "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
             "text-offset": [0, 0.6],
-            "text-anchor": "top"
+            "text-anchor": "top",
+
+        }, 
+        "paint": {
+          "text-color": "#333333",
+
         }
     });
+
+    map.addSource("districts", {
+                "type": "geojson",
+                "data": districts_json
+            });
+
+        map.addLayer({
+        "id": "district-markers",
+        "type": "symbol",
+        "source": "districts",
+        "layout": {
+            "icon-image": "circle-11",
+            "text-field": "{district}",
+            "text-size": 11,
+            "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+            "text-offset": [0, 0.6],
+            "text-anchor": "top",
+             "icon-size": 0.75
+        }, 
+        "paint": {
+          "text-color": "#333333",
+          "icon-color": "red"
+        }
+
+    });
+  });
+
+    
 
     filterInput.addEventListener('keyup', function(e) {
         // If the input value matches a layerID set
@@ -269,7 +756,8 @@ var csv = Papa.parse("/act_2012_2015_TFC_counts.csv", {
         });
     });
 
-  });
+
+
 
 
 
