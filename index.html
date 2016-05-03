@@ -565,7 +565,7 @@ function calc_width(num) {
           if (num < 10000) {return 100}  
 }
 
-var csv = Papa.parse("/act_2012_2015_TFC_counts.csv", {
+var csv = Papa.parse("data/act_2012_2015_TFC_counts.csv", {
   download: true,
   complete: function(results) {
     //console.log("Finshed:", results.data);
