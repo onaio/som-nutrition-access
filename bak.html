@@ -89,7 +89,7 @@ var sites_json = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 45.2677939,2.055]
+       "coordinates":  [ 45.2677939,2.059891418 ]
     },
     "properties": {
     "site":"Kahda"
@@ -99,7 +99,7 @@ var sites_json = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 45.1636, 2.0996  ]
+       "coordinates":  [ 45.49184,3.38148 ]
     },
     "properties": {
     "site":"Lafoole"
@@ -395,7 +395,7 @@ var districts_json = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 45.155,2.09955 ]
+       "coordinates":  [ 45.16352,2.09955 ]
     },
     "properties": {
     "district":"Lafole"
@@ -557,18 +557,12 @@ var districts_json = {
 
 
 function calc_width(num) {
- if (num < 30) {return 1} else
-   if (num < 100) {return 2} else 
-    if (num < 500) {return 3} else
-      if (num < 1000) {return 4} else 
-        if (num < 5000) {return 6} else
-          if (num < 10000) {return 8}  
-}
-//
-
-function calc_opacity(num) {
-  if (num < 5) {return 0.2} else 
- return 1;
+ if (num < 10) {return 0.5} else
+   if (num < 100) {return 1} else 
+    if (num < 500) {return 2} else
+      if (num < 1000) {return 1} else 
+        if (num < 5000) {return 10} else
+          if (num < 10000) {return 100}  
 }
 
 var csv = Papa.parse("data/act_2012_2015_TFC_counts.csv", {
@@ -597,13 +591,9 @@ var csv = Papa.parse("data/act_2012_2015_TFC_counts.csv", {
                 , year = row[6]
                 , count = parseFloat(row[7]);
             //console.log(results.data[i]);
-
-            district = district.replace(/\s+/g, '_').toLowerCase();
-
             if (features[site] === undefined) {
                 features[site] = {}
             }
-            
             if (features[site][district] === undefined) {
                 features[site][district] = {
                     "type": "Feature",
@@ -636,15 +626,13 @@ var csv = Papa.parse("data/act_2012_2015_TFC_counts.csv", {
                 }
 
             }
-
-
-
         }
 
         //console.log(features);
 
         // create features list
         for(var j in features) {
+           //if (j === "Hodan") {
             if (features.hasOwnProperty(j)) {
                 for(var k in features[j]) {
                     if (features[j].hasOwnProperty(k)) {
@@ -652,9 +640,9 @@ var csv = Papa.parse("data/act_2012_2015_TFC_counts.csv", {
                     }
                 }
             }
+          //}
         }
 
-        //console.log(JSON.stringify(features_list));
 
         //console.log(features_list);
 
@@ -682,15 +670,13 @@ var csv = Papa.parse("data/act_2012_2015_TFC_counts.csv", {
         dataGeoJSON.features.forEach(function(feature) {
           var district = feature.properties['origin_district'].toLowerCase();
           var site = feature.properties['site'].toLowerCase();
-          var count = feature.properties['count'];
           var site_district = site + '-' + district;
+          var count = feature.properties['count'];
    
-          //var layerID = 'line-' + site + '-' + district;
-          var layerID = site + '-' + district;
+          var layerID = 'line-' + site;
          
           // Add a layer for this symbol type if it hasn't been added already.
           if (!map.getLayer(layerID)) {
-
             map.addLayer({
                 "id": layerID,
                 "type": "line",
@@ -700,19 +686,16 @@ var csv = Papa.parse("data/act_2012_2015_TFC_counts.csv", {
                     "line-cap": "round"
                 },
                 "paint": {
-                   // "line-color": "#FF4136",
-                    //"line-color": "#b3b3b3",
                     "line-color": "#FF4136",
-                    "line-opacity": calc_opacity(count),
-                    "line-width": calc_width(count)
+                    //"line-color": "#b3b3b3",
+                    "line-width": 2
                 },
                 "filter": ["==", "site_district", site_district]
             });
-            console.log(layerID + " count: " + count + " - " + calc_opacity(count) + " - " + calc_width(count));
             layerIDs.push(layerID);
         }
     });
-  //console.log(layerIDs)
+
      map.addSource("sites", {
                 "type": "geojson",
                 "data": sites_json
