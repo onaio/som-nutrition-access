@@ -557,17 +557,24 @@ var districts_json = {
 
 
 function calc_width(num) {
- if (num < 30) {return 1} else
-   if (num < 100) {return 2} else 
-    if (num < 500) {return 3} else
-      if (num < 1000) {return 4} else 
-        if (num < 5000) {return 6} else
-          if (num < 10000) {return 8}  
+ if (num < 30) {
+     return 1
+ } else if (num < 100) {
+     return 2
+ } else if (num < 500) {
+     return 3
+ } else if (num < 1000) {
+     return 4
+ } else if (num < 5000) {
+     return 6
+ } else {
+     return 8
+ }
 }
 //
 
 function calc_opacity(num) {
-  if (num < 5) {return 0.2} else 
+  if (num < 5) {return 0.2} else
  return 1;
 }
 
@@ -603,7 +610,7 @@ var csv = Papa.parse("data/act_2012_2015_TFC_counts.csv", {
             if (features[site] === undefined) {
                 features[site] = {}
             }
-            
+
             if (features[site][district] === undefined) {
                 features[site][district] = {
                     "type": "Feature",
@@ -684,10 +691,10 @@ var csv = Papa.parse("data/act_2012_2015_TFC_counts.csv", {
           var site = feature.properties['site'].toLowerCase();
           var count = feature.properties['count'];
           var site_district = site + '-' + district;
-   
+
           //var layerID = 'line-' + site + '-' + district;
           var layerID = site + '-' + district;
-         
+
           // Add a layer for this symbol type if it hasn't been added already.
           if (!map.getLayer(layerID)) {
 
@@ -730,7 +737,7 @@ var csv = Papa.parse("data/act_2012_2015_TFC_counts.csv", {
             "text-offset": [0, 0.6],
             "text-anchor": "top",
 
-        }, 
+        },
         "paint": {
           "text-color": "#333333",
 
@@ -754,7 +761,7 @@ var csv = Papa.parse("data/act_2012_2015_TFC_counts.csv", {
             "text-offset": [0, 0.6],
             "text-anchor": "top",
              "icon-size": 0.75
-        }, 
+        },
         "paint": {
           "text-color": "#333333",
           "icon-color": "red"
@@ -763,7 +770,7 @@ var csv = Papa.parse("data/act_2012_2015_TFC_counts.csv", {
     });
   });
 
-    
+
 
     filterInput.addEventListener('keyup', function(e) {
         // If the input value matches a layerID set
